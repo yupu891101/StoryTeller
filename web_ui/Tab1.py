@@ -5,6 +5,7 @@ import soundfile as sf
 import gradio as gr
 import numpy as np
 import nltk
+import os
 
 class Tab1():
     def __init__(self):
@@ -88,6 +89,9 @@ class Tab1():
                 pieces += [audio_array, silence.copy()]
 
             combined_audio = np.concatenate(pieces, axis=0)
+
+            if not os.path.exists("result"):
+                os.makedirs("result")
             output_path = 'result/generated_audio.wav'
             sf.write(output_path, combined_audio, SAMPLE_RATE)
             return output_path, result

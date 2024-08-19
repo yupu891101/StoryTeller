@@ -34,7 +34,7 @@ def main():
             story_img = gr.Image("picture/pic.jpg", show_download_button=False, label=" ")
             with gr.Column():
                 story_content = gr.Text(label="Story Content", placeholder="Select a story to see contents.")
-                story_audio = gr.Audio(autoplay=True, label=" ")
+                story_audio = gr.Audio(autoplay=True, label="")
                 story_radio.change(fn=tab1.play_audio, inputs=story_radio, outputs=[story_img, story_content, story_audio])
             
         gr.Markdown("### Build your own text-to-speech story!")
