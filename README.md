@@ -2,11 +2,13 @@
 
 ## Installation
 
+This project requires Python 3.10. Please ensure you have the correct version installed before proceeding.
+
 First, navigate to the project directory and install the required dependencies:
 
 ```bash
 cd StoryTeller
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Next, you need to install and import the `nltk` library, then download the necessary resource packages:
