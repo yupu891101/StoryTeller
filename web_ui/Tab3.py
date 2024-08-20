@@ -45,7 +45,7 @@ class Tab3():
         expdir_path = os.path.join('./DDSP-SVC/exp',dir_path )
         os.makedirs(expdir_path, exist_ok=True)
 
-        model_0_path = './DDSP-SVC/model_0.pt'
+        model_0_path = './DDSP-SVC/exp/model_0.pt'
         shutil.copy(model_0_path, os.path.join(expdir_path, 'model_0.pt'))
 
     def learn_voice(self, input_wav, dir_path, epoch):
