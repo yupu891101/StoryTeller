@@ -6,6 +6,8 @@ import shutil
 import time
 import os
 
+os.environ["MKL_SERVICE_FORCE_INTEL"] = "1"
+
 stop_training_signal = threading.Event()
 class Tab3():
     def __init__(self):
@@ -59,7 +61,7 @@ class Tab3():
             gr.Warning(warning_msg)
         
         self.move_audio(input_wav)
-        self.update_yaml_env(dir_path,epoch)
+        self.update_yaml_env(dir_path, epoch)
         draw = f"python draw.py"
         preprocess = f"python preprocess.py -c configs/diffusion-fast.yaml"
         train = f"python train_diff.py -c configs/diffusion-fast.yaml"
@@ -105,17 +107,17 @@ class Tab3():
                 print(f"Error during training: {e}")
 
             finally:
-                train_process.terminate()
-                train_process.wait()
+                return_code = train_process.wait()
 
-                return_code = train_process.returncode
                 if return_code == 0:
                     res = "Your voice has been learned successfully! Please go to \"Tell Story with Different Voices\" to use the voice you learned."
                     print(res)
                     return res
                 else:
+                    error_output = train_process.stderr.read().strip()
                     print(f"Train process exited with code: {return_code}")
-            
+                    print(f"Error output: {error_output}")
+
         except Exception as e:
             outputs.append(f"Error: {e}")
 
