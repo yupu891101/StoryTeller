@@ -45,7 +45,7 @@ This project has been tested with Python version 3.10.
 
    Update the `diffusion-fast.yaml` configuration file in the `DDSP-SVC/configs` directory. Specifically, you need to modify the `ckpt` path for the vocoder to point to `pretrain/nsf_hifigan/model.ckpt`.
 
-## Directory Structure
+### Directory Structure
 
 The directory structure of the `DDSP-SVC` folder should look like this:
 
@@ -69,3 +69,11 @@ DDSP-SVC/
 └── scripts/    
     ├── preprocess.py   
     └── train_diff.py   
+
+## Running the Project
+
+To run the project, simply execute the following command in the terminal:
+
+```bash
+python launch.py
+```
