@@ -1,8 +1,8 @@
-=== StoryTeller
+# StoryTeller
 
 This project has been tested with Python version 3.10.
 
---- Installation
+## Installation
 
 First, clone the repository and navigate to the project directory, then install the required dependencies:
 
@@ -34,23 +34,23 @@ pip install -r requirements.txt
 > 4. Download the pre-trained [ContentVec](https://ibm.ent.box.com/s/z1wgl1stco8ffooyatzdwsqn2psd9lrr) encoder and place it into the `pretrain/contentvec` folder within the DDSP-SVC directory.
 > 5. Modify the configuration file in the `DDSP-SVC/configs` directory. The StoryTeller project uses `diffusion-fast.yaml` by default, so you need to update the `ckpt` path for the vocoder in this file to point to `pretrain/nsf_hifigan/model.ckpt`.
 
-DDSP-SVC/
-├── configs/
-│   ├── diffusion-fast.yaml
-│   └── ...
-├── exp/
-│   └── model_0.pt
-├── pretrain/
-│   ├── rmvpe/
-│   │   └── model.pt
-│   ├── nsf_hifigan/
-│   │   ├── config.json
-│   │   ├── model.ckpt
-│   │   ├── NOTICE.txt
-│   │   └── NOTICE.zh-CN.txt
-│   └── contentvec/
-│       └── checkpoint_best_legacy_500.pt
-└── scripts/
-    ├── preprocess.py
-    └── train_diff.py
+DDSP-SVC/     
+├── configs/      
+│   ├── diffusion-fast.yaml   
+│   └── ...   
+├── exp/      
+│   └── model_0.pt    
+├── pretrain/     
+│   ├── rmvpe/    
+│   │   └── model.pt      
+│   ├── nsf_hifigan/      
+│   │   ├── config.json   
+│   │   ├── model.ckpt    
+│   │   ├── NOTICE.txt    
+│   │   └── NOTICE.zh-CN.txt      
+│   └── contentvec/   
+│       └── checkpoint_best_legacy_500.pt     
+└── scripts/      
+    ├── preprocess.py     
+    └── train_diff.py     
 
