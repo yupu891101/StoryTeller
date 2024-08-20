@@ -12,8 +12,8 @@ def main():
     tab3 = Tab3()
 
     StarRail = [
-        ("Himeko", r"../StarRail/himeko/model_300000.pt"),
-        ("rachG", r"../StarRail/rachG/model_300000.pt")
+        ("Himeko", r"../StarRail/himeko/himeko_300000.pt"),
+        ("rachG", r"../StarRail/rachG/rachG_300000.pt")
     ]
 
     with gr.Blocks(theme = 'xiaobaiyuan/theme_brief', title="StoryTeller") as story:
