@@ -50,5 +50,25 @@ pip install -r requirements.txt
             - [NOTICE.zh-CN.txt](./DDSP-SVC/pretrain/nsf_hifigan/NOTICE.zh-CN.txt)
         - contentvec/
             - [checkpoint_best_legacy_500.pt](./DDSP-SVC/pretrain/contentvec/checkpoint_best_legacy_500.pt)
-    
 ```
+
+DDSP-SVC/   
+├── configs/    
+│   ├── diffusion-fast.yaml 
+│   └── ... 
+├── exp/    
+│   └── model_0.pt  
+├── pretrain/   
+│   ├── rmvpe/  
+│   │   └── model.pt    
+│   ├── nsf_hifigan/    
+│   │   ├── config.json 
+│   │   ├── model.ckpt  
+│   │   ├── NOTICE.txt  
+│   │   └── NOTICE.zh-CN.txt    
+│   └── contentvec/ 
+│       └── checkpoint_best_legacy_500.pt   
+└── scripts/    
+    ├── preprocess.py   
+    └── train_diff.py   
+
