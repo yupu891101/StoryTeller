@@ -35,23 +35,6 @@ pip install -r requirements.txt
 > 5. Modify the configuration file in the `DDSP-SVC/configs` directory. The StoryTeller project uses `diffusion-fast.yaml` by default, so you need to update the `ckpt` path for the vocoder in this file to point to `pretrain/nsf_hifigan/model.ckpt`.
 
 ```markdown
-- DDSP-SVC/
-    - configs/
-        - [diffusion-fast.yaml](./DDSP-SVC/configs/diffusion-fast.yaml)
-    - exp/
-        - [model_0.pt](./DDSP-SVC/exp/model_0.pt)
-    - pretrain/
-        - rmvpe/
-            - [model.pt](./DDSP-SVC/pretrain/rmvpe/model.pt)
-        - nsf_hifigan/
-            - [config.json](./DDSP-SVC/pretrain/nsf_hifigan/config.json)
-            - [model.ckpt](./DDSP-SVC/pretrain/nsf_hifigan/model.ckpt)
-            - [NOTICE.txt](./DDSP-SVC/pretrain/nsf_hifigan/NOTICE.txt)
-            - [NOTICE.zh-CN.txt](./DDSP-SVC/pretrain/nsf_hifigan/NOTICE.zh-CN.txt)
-        - contentvec/
-            - [checkpoint_best_legacy_500.pt](./DDSP-SVC/pretrain/contentvec/checkpoint_best_legacy_500.pt)
-```
-```
 DDSP-SVC/   
 ├── configs/    
 │   ├── diffusion-fast.yaml 
