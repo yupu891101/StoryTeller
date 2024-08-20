@@ -51,7 +51,7 @@ pip install -r requirements.txt
         - contentvec/
             - [checkpoint_best_legacy_500.pt](./DDSP-SVC/pretrain/contentvec/checkpoint_best_legacy_500.pt)
 ```
-
+```
 DDSP-SVC/   
 ├── configs/    
 │   ├── diffusion-fast.yaml 
@@ -71,4 +71,4 @@ DDSP-SVC/
 └── scripts/    
     ├── preprocess.py   
     └── train_diff.py   
-
+```
