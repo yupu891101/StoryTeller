@@ -71,6 +71,10 @@ DDSP-SVC/
     └── train_diff.py   
 ```
 
+6. **Download Pre-trained DDSP-SVC Model Weights:**
+
+   Download the pre-trained DDSP-SVC model [weights](https://drive.google.com/drive/u/0/folders/1DTx-_t5hh9bXSm_Va0xKCmMnQotQtCQD) and place them into the respective folders within the `StarRail` directory.
+
 ## Running the Project
 
 To run the project, simply execute the following command in the terminal:
