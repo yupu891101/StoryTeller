@@ -69,6 +69,7 @@ DDSP-SVC/
 └── scripts/    
     ├── preprocess.py   
     └── train_diff.py   
+```
 
 ## Running the Project
 
