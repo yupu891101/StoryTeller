@@ -52,15 +52,3 @@ pip install -r requirements.txt
             - [checkpoint_best_legacy_500.pt](./DDSP-SVC/pretrain/contentvec/checkpoint_best_legacy_500.pt)
     
 ```
-
-1. 项目目录结构：
-.
-├── book.json
-└── example-docs/
-    ├── README.md
-    └── SUMMARY.md
-
-2. book.json 中的配置：
-{
-    "root": "./example-docs"
-}
