@@ -44,5 +44,4 @@ class Tab2():
         print(process.stdout)
         result = "Successfully changed voice!"
         
-        
         return result, output_path
