@@ -1,8 +1,10 @@
 # StoryTeller
 
-This project has been tested with Python version 3.10.
+This project seamlessly integrates two cutting-edge technologies: Suno AI's Bark for text-to-speech conversion and DDSP-SVC for voice cloning. With an intuitive interface, users can easily generate or customize stories, convert text into speech, and clone or train voices tailored to their preferences. Whether you select a story from our collection or create your own, StoryTeller can bring it to life by narrating it in either pre-existing voices or ones you've custom-trained.
 
 ## Installation
+
+This project has been tested with Python version 3.10.
 
 1. **Clone the Repository and Install Dependencies:**
 
