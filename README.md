@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ### 4. Download Pre-trained DDSP-SVC Model Weights
 
-Download the pre-trained DDSP-SVC model [weights](https://drive.google.com/drive/u/0/folders/1DTx-_t5hh9bXSm_Va0xKCmMnQotQtCQD) and place them into the appropriate folders within the `StarRail` directory.
+Download the pre-trained DDSP-SVC model [weights](https://drive.google.com/drive/u/2/folders/1Ghl9at1QcW0QX5k_8SZh9Kqd-82k01Ek) and place them into the appropriate folders within the `StarRail` directory.
 
 ### 5. Download and Set Up Additional Models
 
